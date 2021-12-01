@@ -13,7 +13,7 @@ function App() {
       <MyNavBar brand="Weenix-Music" />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/detail" element={<DetailPage />} />
+        <Route path="/:id" element={<DetailPage /* song={song} */ />} />
       </Routes>
       <MyFooter />
     </BrowserRouter>

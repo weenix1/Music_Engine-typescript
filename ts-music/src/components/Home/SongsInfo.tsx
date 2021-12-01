@@ -11,7 +11,7 @@ const SongsInfo = ({ song }: SongsInfoProps) => {
   return (
     <>
       <Col xs={6} md={4} lg={3} style={{ padding: "2px" }}>
-        <Card onClick={() => navigate("/detail")}>
+        <Card onClick={() => navigate(`/${song.id}`)}>
           <Card.Img variant="top" src={song.album.cover} />
           <Card.Body>
             <Card.Title>
