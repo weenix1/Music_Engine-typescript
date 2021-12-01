@@ -11,13 +11,14 @@ const SongsInfo = ({ song }: SongsInfoProps) => {
   return (
     <>
       <Col xs={6} md={4} lg={3} style={{ padding: "2px" }}>
-        <Card style={{ width: "18rem" }}>
+        <Card onClick={() => navigate("/detail")}>
           <Card.Img variant="top" src={song.album.cover} />
           <Card.Body>
-            <Card.Title onClick={() => navigate("/detail")}>
+            <Card.Title>
+              Song Title:
               {song.title}
             </Card.Title>
-            <span>{song.album.title}</span>
+            <span>Album Title:{song.album.title}</span>
             <span>{song.duration}</span>
           </Card.Body>
         </Card>
